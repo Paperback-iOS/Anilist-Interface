@@ -1,0 +1,6 @@
+mutation AddManga($mangaId: Int, $progress: Int, $status: MediaListStatus) {
+    SaveMediaListEntry ($mediaId: mangaId, $progress: progress, $status: status) {
+        id
+        status
+    }
+}

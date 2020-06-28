@@ -1,0 +1,22 @@
+query Search($query: String) {
+    Page (perPage: 50) {
+        media(search: $query, type: MANGA, format_not_in: [NOVEL]) {
+            id
+            title {
+                romaji
+            }
+            coverImage {
+                large
+            }
+            type
+            status
+            chapters
+            description
+            startDate {
+                year
+                month
+                day
+            }
+        }
+    }
+}

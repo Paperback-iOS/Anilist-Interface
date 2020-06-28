@@ -1,0 +1,28 @@
+query FindLibManga ($id: Int, $manga_id: Int) {
+    Page {
+        mediaList(userId: $id, type: MANGA, mediaId: $manga_id) {
+            id
+            status
+            scoreRaw: score(format: POINT_100)
+            progress
+            media {
+                id
+                title {
+                    romaji
+                }
+                coverImage {
+                    large
+                }
+                type
+                status
+                chapters
+                description
+                startDate {
+                    year
+                    month
+                    day
+                }
+            }
+        }
+    }
+}

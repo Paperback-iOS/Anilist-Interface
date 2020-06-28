@@ -1,0 +1,9 @@
+query User {
+    Viewer {
+        id
+        mediaListOptions {
+            scoreFormat
+        }
+    }
+}
+

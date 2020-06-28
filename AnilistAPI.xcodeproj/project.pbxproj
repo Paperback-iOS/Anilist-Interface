@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		797A1DEF24A958E600743372 /* AnilistUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797A1DED24A958E600743372 /* AnilistUserManager.swift */; };
+		797A1DF024A958E600743372 /* AnilistClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797A1DEE24A958E600743372 /* AnilistClient.swift */; };
+		797A1DF424A9598E00743372 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 797A1DF324A9598E00743372 /* Apollo */; };
+		797A1DF624A9598E00743372 /* ApolloCodegenLib in Frameworks */ = {isa = PBXBuildFile; productRef = 797A1DF524A9598E00743372 /* ApolloCodegenLib */; };
+		797A1DF924A959A300743372 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 797A1DF824A959A300743372 /* Logging */; };
+		797A1DFB24A959D600743372 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797A1DFA24A959D600743372 /* API.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		797A1DDA24A958AC00743372 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		797A1DDC24A958AC00743372 /* libAnilistAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAnilistAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		797A1DE724A958C900743372 /* AddManga.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AddManga.graphql; sourceTree = "<group>"; };
+		797A1DE824A958C900743372 /* GetCurrentUser.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetCurrentUser.graphql; sourceTree = "<group>"; };
+		797A1DE924A958C900743372 /* FindLibraryManga.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FindLibraryManga.graphql; sourceTree = "<group>"; };
+		797A1DEA24A958CA00743372 /* UpdateLibraryManga.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UpdateLibraryManga.graphql; sourceTree = "<group>"; };
+		797A1DEB24A958CA00743372 /* Search.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Search.graphql; sourceTree = "<group>"; };
+		797A1DEC24A958D900743372 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		797A1DED24A958E600743372 /* AnilistUserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnilistUserManager.swift; sourceTree = "<group>"; };
+		797A1DEE24A958E600743372 /* AnilistClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnilistClient.swift; sourceTree = "<group>"; };
+		797A1DFA24A959D600743372 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		797A1DFC24A95AF500743372 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		797A1DD924A958AC00743372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797A1DF924A959A300743372 /* Logging in Frameworks */,
+				797A1DF424A9598E00743372 /* Apollo in Frameworks */,
+				797A1DF624A9598E00743372 /* ApolloCodegenLib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		797A1DD324A958AC00743372 = {
+			isa = PBXGroup;
+			children = (
+				797A1DFC24A95AF500743372 /* .gitignore */,
+				797A1DDE24A958AC00743372 /* AnilistAPI */,
+				797A1DDD24A958AC00743372 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		797A1DDD24A958AC00743372 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797A1DDC24A958AC00743372 /* libAnilistAPI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		797A1DDE24A958AC00743372 /* AnilistAPI */ = {
+			isa = PBXGroup;
+			children = (
+				797A1DFA24A959D600743372 /* API.swift */,
+				797A1DEE24A958E600743372 /* AnilistClient.swift */,
+				797A1DED24A958E600743372 /* AnilistUserManager.swift */,
+				797A1DEC24A958D900743372 /* schema.json */,
+				797A1DE624A958C900743372 /* operations */,
+			);
+			path = AnilistAPI;
+			sourceTree = "<group>";
+		};
+		797A1DE624A958C900743372 /* operations */ = {
+			isa = PBXGroup;
+			children = (
+				797A1DE724A958C900743372 /* AddManga.graphql */,
+				797A1DE824A958C900743372 /* GetCurrentUser.graphql */,
+				797A1DE924A958C900743372 /* FindLibraryManga.graphql */,
+				797A1DEA24A958CA00743372 /* UpdateLibraryManga.graphql */,
+				797A1DEB24A958CA00743372 /* Search.graphql */,
+			);
+			path = operations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		797A1DDB24A958AC00743372 /* AnilistAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 797A1DE324A958AC00743372 /* Build configuration list for PBXNativeTarget "AnilistAPI" */;
+			buildPhases = (
+				797A1DF124A9592200743372 /* Generate Apollo GraphQL API  */,
+				797A1DD824A958AC00743372 /* Sources */,
+				797A1DD924A958AC00743372 /* Frameworks */,
+				797A1DDA24A958AC00743372 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnilistAPI;
+			packageProductDependencies = (
+				797A1DF324A9598E00743372 /* Apollo */,
+				797A1DF524A9598E00743372 /* ApolloCodegenLib */,
+				797A1DF824A959A300743372 /* Logging */,
+			);
+			productName = AnilistAPI;
+			productReference = 797A1DDC24A958AC00743372 /* libAnilistAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		797A1DD424A958AC00743372 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Conrad Weiser";
+				TargetAttributes = {
+					797A1DDB24A958AC00743372 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 797A1DD724A958AC00743372 /* Build configuration list for PBXProject "AnilistAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 797A1DD324A958AC00743372;
+			packageReferences = (
+				797A1DF224A9598E00743372 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				797A1DF724A959A300743372 /* XCRemoteSwiftPackageReference "swift-log" */,
+			);
+			productRefGroup = 797A1DDD24A958AC00743372 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				797A1DDB24A958AC00743372 /* AnilistAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		797A1DF124A9592200743372 /* Generate Apollo GraphQL API  */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API ";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\necho \"Attempting to generate code\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		797A1DD824A958AC00743372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797A1DF024A958E600743372 /* AnilistClient.swift in Sources */,
+				797A1DFB24A959D600743372 /* API.swift in Sources */,
+				797A1DEF24A958E600743372 /* AnilistUserManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		797A1DE124A958AC00743372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		797A1DE224A958AC00743372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		797A1DE424A958AC00743372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		797A1DE524A958AC00743372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		797A1DD724A958AC00743372 /* Build configuration list for PBXProject "AnilistAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797A1DE124A958AC00743372 /* Debug */,
+				797A1DE224A958AC00743372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		797A1DE324A958AC00743372 /* Build configuration list for PBXNativeTarget "AnilistAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797A1DE424A958AC00743372 /* Debug */,
+				797A1DE524A958AC00743372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		797A1DF224A9598E00743372 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.24.0;
+			};
+		};
+		797A1DF724A959A300743372 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		797A1DF324A9598E00743372 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 797A1DF224A9598E00743372 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		797A1DF524A9598E00743372 /* ApolloCodegenLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 797A1DF224A9598E00743372 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCodegenLib;
+		};
+		797A1DF824A959A300743372 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 797A1DF724A959A300743372 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 797A1DD424A958AC00743372 /* Project object */;
+}

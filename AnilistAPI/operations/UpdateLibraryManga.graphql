@@ -1,0 +1,7 @@
+mutation UpdateManga($listId: Int, $progress: Int, $status: MediaListStatus, $score: Int) {
+    SaveMediaListEntry (id: $listId, progress: $progress, status: $status, scoreRaw: $score) {
+        id
+        status
+        progress
+    }
+}
